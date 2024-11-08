@@ -1,7 +1,6 @@
 import numpy as np
 import random
 import json
-
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
@@ -123,7 +122,9 @@ data = {
 "tags": tags
 }
 
-FILE = "data.pth"
+FILE = r"D:\BDBI-3\chatbot\chatbot_project\pytorch-chatbot\data.pth"
+
 torch.save(data, FILE)
 
 print(f'training complete. file saved to {FILE}')
+
